@@ -1,0 +1,983 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+   
+}
+.container4{
+    margin-top: 0px;
+    clear: both;
+    width: 100%;
+    height: 4px;
+    background-color: #6a0000;
+}
+.logo{
+    margin-left: 150px;
+    margin-top: 5px;
+    padding: 5px;
+}
+.cnnectSocial{
+    margin-left: 900px;
+    margin-top:  -50px;
+    padding: 10px;
+}
+
+.navbar{
+    top: 10px;
+    margin-left: 140px;
+    width: 79%;
+    height: 43px;
+    background: #6a0000;
+}
+
+.navbar ul{
+    height: 35%; 
+    list-style: none;
+    display: inline;
+    padding: 0px;
+    margin-left: -15px;
+     
+}
+
+.navbar ul li{
+    text-align: center;
+    display: inline;
+    position: relative;
+    padding: 12px 0px 14px 0px;
+    border-right: 1px solid black;
+    /*border-style: solid;
+    border-width: 0.02px;
+    color: black;*/
+}
+.active {
+    background-color: #ff3333;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding: 12px 20px 14px 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navbar ul li:hover{
+    background:#ff3333;
+}
+
+.navbar ul li ul{
+    padding: : 0;
+    position: absolute;
+    top:43px;
+    left: 0px;
+    width:270px;
+    display: none;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.navbar ul li ul li{
+    background: #6a0000;
+    display: block;
+    text-align: left;
+    height: 30px;
+    margin-left: 14px;
+    padding: 5px;
+    border-bottom: 1px solid #ff3333 ;
+}
+.navbar ul li ul li a{
+    padding-left: 7px;
+}
+
+.navbar ul li ul li:hover{
+    background: #ff3333;
+    color: white;
+}
+
+.navbar ul li:hover ul{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+.navbar ul ul ul li{
+    display: none;
+}
+.active{
+    color: #ff3333;
+}
+.slide1 ul li{
+    /*position: absolute;*/
+    clear: both;
+    width: 100%;
+    list-style: none;
+    margin-top: 20px;
+    margin-left:130px;
+}
+.container{
+    width: 100%;
+    border-top: 1px solid #737373;
+    border-bottom: 1px solid #737373;
+}
+
+.panel1{
+    height: 150px;
+    background-color: #F1F0F0 ;
+}
+.panel1 h2 {
+    padding: 7px 10px;
+    position: relative;
+    font-size: 40px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+h2:before, h2:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 5px;
+    content: '\a0';
+    background-color: gray;
+    
+}
+h2:before {
+    margin-left: -50%;
+    text-align: right;
+}
+
+.panel1 p{
+    margin: 5px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.row{
+    padding: 20px 120px 10px 115px;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 360px;/* Should be removed. Only for demonstration */
+    border-right: 1px dotted gray; 
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column h4{
+    color: #ff3333;
+    margin-bottom: 17px;
+}
+.column img{
+    width: 350px;
+    border: 7px solid gray;
+    margin-bottom: 7px;
+}
+
+.column p{
+    font-size: 13px;
+    margin-left: 0px;
+    margin-right: 5px;
+    text-align: justify;
+}
+
+.button{
+    float: right;
+    background-color: #6a0000; /* Green */
+    border: none;
+    color: white;
+    padding: 7px 12px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.button:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.list1 ul {
+    list-style: none; /* Remove HTML bullets */
+    padding-left: 7px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+}
+
+.list1 li { 
+     padding-left: 7px; 
+     padding-top:3px;
+     padding-bottom:15px;
+     border-bottom: 1px solid #ddd;
+     height:30px;
+     color: black;
+    font-size: 13px;
+}
+
+.list1 li::before {
+    content: "\21FE"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: black; /* Or a color you prefer */  
+}
+.list1 a{
+    color: inherit;
+    text-decoration: none;
+}
+.list1 a:hover{
+    color: #ff3333;
+}
+hr { 
+    display: block;
+    color: darkgray;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-style: dotted;
+    border-width: 1px;
+} 
+
+.table1{
+    margin-left: 85px;
+    margin-top: -20px;
+    padding: 10px;
+}
+
+.table1 h3{
+    margin-left: 20px;
+    color: #ff3333;
+}
+.table1 ul{
+    list-style: none;
+    padding-top: 4px; 
+    font-size: 13px;
+}
+
+.table1 li{
+    margin-left: -17px;
+    padding-bottom: 15px;
+}
+
+.table1 li::before{
+    content: "\203A";
+    padding: 0px 5px 0px 0px;
+    color: black;
+}
+
+.table2{
+    margin-top: -230px;
+    margin-left: 550px;
+    margin-right: 100px;
+    border: 1px solid darkgray;
+    background-color: #ddd;
+}
+.table2 h4{
+    color: #ff3333;
+    padding: 5px 5px 0px 11px;
+}
+.table2 table{
+    margin-left: -30px;
+}
+.table2 td{
+    padding: 5px;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1; /* Firefox */
+}
+.descArea{
+    width: 417px;
+}
+/*.emailArea{
+    margin-left: -190px;
+}
+.dateArea{
+    margin-top: 0px;
+    margin-left: 0px;
+}*/
+
+.sbmtBtn{
+    background-color: #6a0000;
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container2{
+    margin-top: 20px;
+    clear: both;
+    width: 100%;
+    height: 170px;
+    background-color: #ddd;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.panel2 h5{
+    margin-left: 115px;
+    margin-top: 20px;
+    font-size: 15px; 
+}
+
+.panel2 hr{
+    display: block;
+    color: darkgray;
+    margin-left: 115px;
+    margin-right: 1000px;    
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    border-style: solid;
+    border-width: 0.4px;
+}
+.panel2 ul{
+    list-style: none;
+    margin-top: -10px;
+    font-size: 13px;
+}
+.panel2 li::before{
+    content: "\00a4";
+    padding: 0px 7px 0px 0px;
+}
+.panel2 li{
+    margin-top: 1px;
+}
+.panel2 a{
+    color: inherit;
+    text-decoration: none;
+}
+.panel2 a:hover{
+    color: #ff3333;
+}
+.clm1{
+    width: 25%;
+    margin-left: 75px;
+}
+.clm2{
+    width: 25%;
+    margin-left: 370px;
+    margin-top: -115px;
+}
+.clm3{
+    width: 25%;
+    margin-left: 645px;
+    margin-top: -115px;
+}
+.clm3{
+    width: 25%;
+    margin-left: 645px;
+    margin-top: -115px;
+}
+.clm4{
+    width: 25%;
+    margin-left: 900px;
+    margin-top: -97px;
+}
+
+.container3{
+    margin-top: 0px;
+    clear: both;
+    width: 100%;
+    height: 80px;
+    background-color: #333333;
+    border-top: 1px solid #e6e6e6;
+}
+.container3 p{
+    margin-top: 15px;
+    margin-left: 110px;
+    color: white;
+    font-size: 13px;
+}
+
+.container3 img{
+    float: right;
+    margin-right: 140px;
+    margin-top: -50px;
+}
+
+.cpyRight {
+    margin-top: -10px;
+    margin-left: 0px;
+    color: white;
+    font-size: 13px;
+}
+.cpyRight p::before{
+    content: "\00a9";
+    padding-right:7px;
+}
+
+.colmnabt1{
+    margin-left: 140px;
+    margin-right: 400px;
+}
+.colmnabt1 h4{
+    color: coral;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.colmnabt1 hr{
+    display: block;
+    color: darkgray;
+    margin-left: -4px;
+    margin-right: 0px;
+    margin-top: -.3em;
+    margin-bottom: 0em;
+    border-style:solid;
+    border-width: 1px;
+}
+
+.colmnabt1 p{
+    font-size: 13px;
+    text-align: justify;
+}
+
+.colmnabt2{
+    margin-left: 140px;
+    margin-right: 400px;
+    padding-bottom:  25px;
+}
+.colmnabt2 h5{
+    color: coral;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.colmnabt2 hr{
+    display: block;
+    color: darkgray;
+    margin-left: -4px;
+    margin-right: 0px;
+    margin-top: -.6em;
+    margin-bottom: 0em;
+    border-style: dashed;
+    border-width: 1px;
+}
+.colmnabt2 img{
+    margin-top: 15px;
+    margin-right: 9px;
+    float: left;
+    border-style: double;
+    border-color: gray;
+    padding: 0px;
+}
+.colmnabt2 p{
+    margin-top: 15px;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.colmnabt3{
+    margin-left: 140px;
+    margin-right: 400px;
+}
+.colmnabt3 h5{
+    color: coral;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.colmnabt3 hr{
+    display: block;
+    color: darkgray;
+    margin-left: -4px;
+    margin-right: 0px;
+    margin-top: -0.6em;
+    margin-bottom: 0em;
+    border-style: dashed;
+    border-width: 1px;
+}
+.colmnabt3 img{
+    margin-top: 15px;
+    margin-left: 9px;
+    float: right;
+    border-style: double;
+    border-color: gray;
+    padding: 0px;
+}
+.colmnabt3 p{
+    margin-top: 15px;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.colmnabt4{
+    margin-left: 140px;
+    margin-right: 400px;
+    padding-bottom:  25px;
+}
+.colmnabt4 h5{
+    color: coral;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.colmnabt4 hr{
+    display: block;
+    color: darkgray;
+    margin-left: -4px;
+    margin-right: 0px;
+    margin-top: -.6em;
+    margin-bottom: 0em;
+    border-style: dashed;
+    border-width: 1px;
+}
+.colmnabt4 img{
+    margin-top: 15px;
+    margin-right: 9px;
+    float: left;
+    border-style: double;
+    border-color: gray;
+    padding: 0px;
+}
+.colmnabt4 p{
+    margin-top: 15px;
+    font-size: 13px;
+    text-align: justify;
+}
+.colmnabt5{
+    float: right;
+    margin-top: -880px;
+    margin-right: 130px;
+    /*margin-left: 980px;*/
+}
+.colmnabt5 h4{
+    color: coral;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+.colmnabt5 hr{
+    display: block;
+    color: darkgray;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -.3em;
+    margin-bottom: 0em;
+    border-style:solid;
+    border-width: 1px;
+}
+
+.list2 ul{
+    list-style: none;   
+    margin-top: 10px;
+    text-align: left;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+.list2 ul li:hover{
+    background-color: #6a0000;
+    color: white;
+}
+.list2 ul li{
+    display: block;
+    height: 30px;
+    margin-left: -40px;
+    padding-top: 6px;
+    padding-right: 20px;
+    border-bottom: 1px dashed darkgray;
+    background-color: lightgray;
+}
+.list2 li::before {
+    content: "\21FE"; /* Insert content that looks like bullets */
+    padding-right: 5px;
+    padding-left: 0px;  
+}
+.list2 li::before:hover{
+    color: white;
+}
+.list2 a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.row3{
+    margin-left: 140px;
+    margin-right: 400px;
+}
+.colmnIntrntional1 h4{
+    color: coral;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.colmnIntrntional1 hr{
+    display: block;
+    color: darkgray;
+    margin-left: -4px;
+    margin-right: 0px;
+    margin-top: -.3em;
+    margin-bottom: 0em;
+    border-style:solid;
+    border-width: 1px;
+}
+.colmnIntrntional1 h5{
+    color: coral;
+    margin-top: 12px;
+    margin-bottom: 3px;
+}
+.colmnIntrntional1 img{
+    margin-top: 10px;
+    margin-right: 9px;
+    float: left;
+    border-style: double;
+    border-color: gray;
+    padding: 0px;
+}
+.colmnIntrntional1 p{
+    margin-top: 15px;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.colmnIntrntional2 h5{
+    color: coral;
+    margin-top: 35px;
+    margin-bottom: 3px;
+}
+
+.colmnIntrntional2 p{
+    margin-top: 5px;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.colmnIntrntional3{
+    float: right;
+    margin-top: -823px;
+    margin-right: 130px;
+    /*margin-left: 980px;*/
+}
+.colmnIntrntional3 h4{
+    color: coral;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+.colmnIntrntional3 hr{
+    display: block;
+    color: darkgray;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -.3em;
+    margin-bottom: 0em;
+    border-style:solid;
+    border-width: 1px;
+}
+
+.list3 ul{
+    list-style: none;   
+    margin-top: 10px;
+    text-align: left;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+.list3 ul li:hover{
+    background-color: #6a0000;
+    color: white;
+}
+.list3 ul li{
+    display: block;
+    height: 30px;
+    margin-left: -40px;
+    padding-top: 6px;
+    padding-right: 20px;
+    border-bottom: 1px dashed darkgray;
+    background-color: lightgray;
+}
+.list3 li::before {
+    content: "\21FE"; /* Insert content that looks like bullets */
+    padding-right: 5px;
+    padding-left: 0px;  
+}
+.list3 li::before:hover{
+    color: white;
+}
+.list3 a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.row4{
+    margin-left: 140px;
+    margin-right: 135px;
+}
+.impLinks h4{
+    color: coral;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.impLinks hr{
+    display: block;
+    color: darkgray;
+    margin-left: 1px;
+    margin-right: 40px;
+    margin-top: -0.3em;
+    margin-bottom: 0em;
+    border-style:solid;
+    border-width: 1px;
+}
+
+.linkMenu  {
+    margin-top: 15px;
+    position: relative;
+}
+.linkMenu ul{
+    list-style: none;
+    display: inline;
+}
+.linkMenu ul li{
+    text-align: center;
+    display: inline;
+    position: relative;
+    padding: 12px 5px 12px 5px;
+    width: 100%;
+    height: 30px;
+    background: #6a0000;
+}
+.linkMenu .column {
+    float: left;
+    width: 33.33%;
+    height: 70px;
+    margin-right: 0px;
+    padding: 0px 40px 0px 0px;
+    border: none;
+}
+.linkMenu h5{
+    font-size: 15px;
+    padding-top: 7px;
+    font-weight: bold;
+    color: white;
+}
+.card {
+    box-sizing: border-box;
+    border-radius: 0px;
+    box-shadow: 0 9px 2px 0 rgba(0, 0, 0, 0.2);
+    padding:0px;
+    text-align: center;
+    background-color: #6a0000;
+}
+
+
+.linkMenu li::before:hover{
+    color: white;
+}
+.linkMenu a{
+    color: inherit;
+    text-decoration: none;
+}
+.row5{
+    margin-left: 140px;
+    width: 79%;
+}
+.cntUs{
+    margin-left: 0px;
+    margin-right: 400px;
+}
+.cntUs h4{
+    color: coral;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.cntUs hr{
+    display: block;
+    color: darkgray;
+    margin-left: 0px;
+    margin-right: -400px;
+    margin-top: 1.5em;
+    margin-bottom: 0em;
+    border-style:solid;
+    border-width: 1px;
+}
+.colmncntcUs1{
+    float: left;
+    width: 33.33%;
+    padding-top: 5px;
+    padding-right: 20px;
+    height: 400px;/* Should be removed. Only for demonstration */
+   
+}
+.colmncntcUs1 h5{
+    color: coral;
+    margin-top: 5px;
+}
+.colmncntcUs1 p{
+    font-size: 12px;
+}
+.cntctFrm input{
+    margin-bottom: 10px;
+    padding-right: 140px;
+    border : 1px solid lightgray;
+    border-radius: 7px ;
+}
+.cntctFrm textarea{
+    border : 1px solid lightgray;
+    border-radius: 7px ;
+    padding-right: 155px;
+}
+.cntctFrm input[type=submit] {
+  background-color: #6a0000;
+  color: white;
+  padding: 5px 17px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.cntctFrm input[type=submit]:hover {
+    background-color: #6a0000;
+    box-shadow: 2px 0px 8px 4px gray;
+}
+
+.colmnpractce{
+    float: right;
+    margin-top: -347px;
+    margin-right: 130px;
+    /*margin-left: 980px;*/
+}
+.colmnpractce h4{
+    color: coral;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+.colmnpractce hr{
+    display: block;
+    color: darkgray;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -.3em;
+    margin-bottom: 0em;
+    border-style:solid;
+    border-width: 1px;
+}
+
+.list6 ul{
+    list-style: none;   
+    margin-top: 10px;
+    text-align: left;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+.list6 ul li:hover{
+    background-color: #6a0000;
+    color: white;
+}
+.list6 ul li{
+    display: block;
+    height: 30px;
+    margin-left: -40px;
+    padding-top: 6px;
+    padding-right: 20px;
+    border-bottom: 1px dashed darkgray;
+    background-color: lightgray;
+}
+.list6 li::before {
+    content: "\21FE"; /* Insert content that looks like bullets */
+    padding-right: 5px;
+    padding-left: 0px;  
+}
+.list6 li::before:hover{
+    color: white;
+}
+.list6 a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.colmnpractice2{
+    margin-left: 140px;
+    margin-right: 400px;
+    padding-bottom:  25px;
+}
+.colmnpractice2 h5{
+    color: coral;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.colmnpractice2 img{
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-right: 9px;
+    float: left;
+    border-style: double;
+    border-color: gray;
+    padding: 0px;
+}
+.colmnpractice2 p{
+    margin-top: 15px;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.list7 ul{
+    list-style: none;   
+    margin-top: 10px;
+    text-align: left;
+    font-size: 12px;
+    margin-right: 20px; 
+}
+.list7  a:hover{
+    font-weight: 700;
+    color: coral;
+}
+.list7 ul li{ 
+    height: 35px;
+    margin-left: -40px;
+    margin-right: 600px;
+    padding-top: 6px;
+    padding-right: 20px;
+}
+.list7 li::before {
+    content: "\21FE"; /* Insert content that looks like bullets */
+    padding-right: 5px; 
+}
+.list7 a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.sitmap{
+    margin-left: 175px;
+    margin-right: 175px;
+}
+.sitmap h4{
+    color: coral;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.sitmap hr{
+    display: block;
+    color: darkgray;
+    margin-left: -4px;
+    margin-right: 0px;
+    margin-top: -.3em;
+    margin-bottom: 0em;
+    border-style:solid;
+    border-width: 1px;
+}
+.sitmap img{
+    margin-left: 400px;
+    margin-top: -235px;
+}
